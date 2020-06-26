@@ -1,0 +1,54 @@
+<div id="main">
+    <article class="post">
+        <header>
+            <div class="title">
+                <h2>{{title}}</h2>
+            </div>
+        </header>
+
+        <div class="table-wrapper">
+            <table class="alt">
+                <thead>
+                    <tr>
+                        <th>Runner</th>
+                        <th>Time</th>
+                        <th>Proof</th>
+                    </tr>
+                </thead>
+                {{#each runs}}
+                    <tr>
+                        <td>{{user}}</td>
+                        <td>{{duration length}}</td>
+					    <td><a href="{{proof_url}}" class="icon solid fa-rss"><span class="label"></span></a></td>
+                    </tr>
+                {{/each}}
+            </table>
+        </div>
+    </article>
+</div>
+
+<section id="sidebar">
+    <section id="intro"> 
+        <a href="#" class="logo"><img src="/taco_bell.png"></a>
+        <header>
+            <h2>drive thru%</h2>
+            <p>Get through the drive through and back</p>
+        </header>
+    </section>
+    <section>
+        <h3>Objective:</h3>
+        <p>Order taco bell in the drive through and bring it home</p>
+    </section>
+    <section>
+        <h3>Rules:</h3>
+        <ul>
+            <li>Time start when you turn your car on</li>
+            <li>Time stops when you turn your car off</li>
+            <li>Must order, pay for, and recieve at least one item from the drive through</li>
+            <li>Car must start and end near where you live</li>
+            <li>No online ordering</li>
+            <li>No drone scouting (TAS only)</li>
+            <li>Proof not required, but highly encouraged</li>
+        </ul>
+    </section>
+</section>
