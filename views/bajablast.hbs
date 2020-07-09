@@ -5,7 +5,27 @@
                 <h2>{{title}}</h2>
             </div>
         </header>
-        <p>This category is still being workshopped. Check back soon for times</p>
+        <div class="table-wrapper">
+            <table class="alt">
+                <thead>
+                    <tr>
+                        <th>Runner</th>
+                        <th>Time</th>
+                        <th>Completed on</th>
+                        <th>Proof</th>
+                    </tr>
+                </thead>
+                {{#each runs}}
+                    <tr>
+                        <td>{{user}}</td>
+                        <td>{{duration length}}</td>
+					    <td>{{moment run_completed "LL"}}</td>
+                        <td><a href="{{proof_url}}" class="icon solid fa-rss"><span class="label"></span></a></td>
+                    </tr>
+                {{/each}}
+            </table>
+        </div>
+    
     </article>
 </div>
 
@@ -14,7 +34,20 @@
         <a href="#" class="logo"><img src="/taco_bell.png"></a>
         <header>
             <h2>baja blast%</h2>
-            <p>idk something about baja blast?</p>
+            <p>Chug a baja blast then flip cup the cup</p>
         </header>
+    </section>
+    <section>
+        <h3>Rules:</h3>
+        <ul>
+            <li>Time starts when you pick up the cup</li>
+            <li>Time stops when you've successfully flip cupped the cup</li>
+            <li>Cup must be filled to the top with Baja Blast</li>
+            <li>Baja Blast in the cup must come from Taco Bell</li>
+            <li>Time cannot end until all Baja Blast from the cup is consumed</li> 
+            <li>No ice in the cup. All baja blast</li>
+            <li>SERIOUSLY JAMES. DONT YOU DARE PUT ICE IN THE CUP</li>
+            <li>Please recycle the cup when done</li>
+        </ul>
     </section>
 </section>
